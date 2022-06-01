@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fuentes/Poppins-SemiBold.otf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+}
+*::selection {
+  background-color: yellow;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body header {
+  position: sticky;
+  top: 0;
+}
+body header nav .menu a {
+  margin: 1rem;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+  transition: 0.5s;
+  color: white !important;
+}
+body header nav .menu a:hover {
+  transform: scale(1.15);
+  color: white;
+}
+body footer .footer {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  bottom: 0;
+}
+body footer .footer .redes {
+  padding: 0.5rem;
+}
+body footer .footer .parrafo:hover {
+  text-decoration: underline;
+}
+body footer .footer .parrafo p {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+body main .texto-del-dia {
+  padding: 1rem 3rem 3rem 3rem;
+}
+body main .texto-del-dia h1 {
+  font-size: 5rem;
+}
+body main .texto-del-dia h2 {
+  font-size: 2.5rem;
+}
+body main .texto-del-dia p {
+  font-size: 1rem;
+}
+body main .gag-en-gug {
+  padding: 1rem 3rem 3rem 3rem;
+}
+body main .gag-en-gug h2 {
+  font-size: 2.5rem;
+}
+body main .gag-en-gug h3 {
+  font-size: 1.25rem;
+}
+body main .gag-en-gug p {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

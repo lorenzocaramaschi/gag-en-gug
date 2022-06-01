@@ -1,0 +1,58 @@
+@import"../operadores/mapas";
+
+body {
+    header {
+        position: sticky;
+        top: 0;
+
+        nav {
+            .menu {               
+                a {
+                    margin: 1rem;
+                    padding: 0.5rem;
+                    color: map-get($color, blanco);
+                    font-size: 1.5rem;
+                    transition: 0.5s;
+                    color: white !important;
+                }
+
+                a:hover {
+                    transform: scale(1.15);
+                    color: white;
+                }
+            }
+
+        }
+
+    }
+
+    footer {
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            bottom: 0;
+
+            .redes {
+                padding: 0.5rem;
+            }
+
+            .parrafo {
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0.5rem;
+                }
+
+            }
+
+        }
+    }
+
+}
