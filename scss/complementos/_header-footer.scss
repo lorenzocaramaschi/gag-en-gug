@@ -1,15 +1,26 @@
 @import"../operadores/mapas";
 
 body {
+    
+    main {
+        background-image: url("../imagenes/papel-bg.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+
     header {
         position: sticky;
         top: 0;
+        z-index: 10;
 
         nav {
-            .menu {               
+            .menu {
                 a {
                     margin: 1rem;
-                    padding: 0.5rem;
+                    padding: 0.25rem;
                     color: map-get($color, blanco);
                     font-size: 1.5rem;
                     transition: 0.5s;
@@ -24,6 +35,10 @@ body {
 
         }
 
+    }
+
+    main {
+        color: black;
     }
 
     footer {

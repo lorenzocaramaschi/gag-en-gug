@@ -47,6 +47,30 @@
     <main>
         <div class="texto-del-dia">
             <h1>¡Contactanos!</h1>
+
+            <form action="https://formspree.io/f/xlezvejw" method="POST" class="form-contacto">
+                <div class="form-fila">
+                    <!-- Label "titulo"-->
+                    <label for="full-name">Autor/a:</label>
+                    <!-- Input tipo text -->
+                    <input type="text" name="autor" id="full-name" placeholder="Lorenzo Caramaschi">
+
+                    <!-- Label "titulo"-->
+                    <label for="titulo">Título del Texto:</label>
+                    <!-- Input tipo text -->
+                    <input type="text" id="titulo" placeholder="Figuritas Mentales" name="titulo texto">
+
+                    <!-- Text area -->
+                    <label for="form-comentarios">Tu texto:</label>
+                    <textarea name="form-comentarios" id="form-comentarios"
+                        placeholder="Acá va tu texto, el que escribiste en algún momento y te interesa compartir con nuestra comunidad en Gag en Gug ©!"
+                        cols="30" rows="10"></textarea>
+
+                    <!-- Boton submit / enviar -->
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+
         </div>
     </main>
 
@@ -58,9 +82,13 @@
                 <a href="https://twitter.com/loluza_"><img src="../imagenes/logos/logo-twitter.png" width="25"
                         height="25" alt="logo twitter"></a>
             </div>
-            <div class="legales">
+            <div class="parrafo">
                 <strong>
                     <p>©Todos los derechos reservados 2022.</p>
+                </strong>
+            </div>
+            <div class="parrafo">
+                <strong>
                     <p>Politica de Privacidad</p>
                 </strong>
             </div>

@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Poppins';
-    src: url('../../fuentes/Poppins-SemiBold.otf');
+    src: url('../fuentes/Poppins-SemiBold.otf');
 }
 
 * {
@@ -9,8 +9,8 @@
     font-family: 'Poppins';
 
     &::selection {
-        background-color: yellow;
-        color: black;
+        background-color: rgb(6, 152, 201);
+        color: white;
     }
 }
 
@@ -18,3 +18,4 @@ a {
     text-decoration: none;
     color: black;
 }
+
