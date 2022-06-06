@@ -63,9 +63,43 @@ body footer .footer .parrafo p {
   margin: 0;
   padding: 0.5rem;
 }
+@media (max-width: 394px) {
+  body footer .footer .parrafo p {
+    font-size: 0.7rem;
+  }
+}
 
 body main .texto-del-dia {
   padding: 1rem 3rem 3rem 3rem;
+}
+body main .texto-del-dia .texto-aparte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+}
+body main .texto-del-dia .texto-aparte img {
+  width: 25%;
+  margin: auto;
+}
+@media (min-width: 351px) and (max-width: 636px) {
+  body main .texto-del-dia .texto-aparte img {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media (max-width: 350px) {
+  body main .texto-del-dia .texto-aparte img {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (max-width: 350px) {
+  body main .texto-del-dia .texto-aparte {
+    width: 90%;
+    margin: auto;
+  }
 }
 body main .texto-del-dia .bloque {
   background-color: rgba(255, 255, 255, 0.342);
@@ -81,20 +115,86 @@ body main .texto-del-dia .bloque:hover {
 body main .texto-del-dia .bloque .contenedor {
   display: flex;
 }
+@media (min-width: 351px) and (max-width: 682px) {
+  body main .texto-del-dia .bloque .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 350px) {
+  body main .texto-del-dia .bloque .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 body main .texto-del-dia .bloque .contenedor img {
   padding-right: 1rem;
   width: 30%;
   height: 30%;
+  resize: none;
+}
+@media (min-width: 351px) and (max-width: 682px) {
+  body main .texto-del-dia .bloque .contenedor img {
+    width: 80%;
+    height: 80%;
+    resize: none;
+    padding: 1rem;
+  }
+}
+@media (max-width: 350px) {
+  body main .texto-del-dia .bloque .contenedor img {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 350px) {
+  body main .texto-del-dia .bloque .contenedor .texto-bloque h3 {
+    font-size: 1rem;
+  }
 }
 body main .texto-del-dia .bloque .contenedor .texto-bloque h4 {
   background-color: black;
   color: white;
 }
+@media (max-width: 350px) {
+  body main .texto-del-dia .bloque .contenedor .texto-bloque h4 {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 350px) {
+  body main .texto-del-dia .bloque .contenedor .texto-bloque .p-bloque {
+    font-size: 0.5rem;
+  }
+}
 body main .texto-del-dia h1 {
   font-size: 5rem;
 }
+@media (min-width: 351px) and (max-width: 636px) {
+  body main .texto-del-dia h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 350px) {
+  body main .texto-del-dia h1 {
+    font-size: 2.25rem;
+  }
+}
 body main .texto-del-dia h2 {
   font-size: 2.5rem;
+}
+@media (min-width: 351px) and (max-width: 636px) {
+  body main .texto-del-dia h2 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 350px) {
+  body main .texto-del-dia h2 {
+    font-size: 1.05rem;
+  }
 }
 body main .texto-del-dia .aclaracion {
   color: rgb(66, 66, 66);
@@ -107,17 +207,57 @@ body main .texto-del-dia p {
   background-color: rgba(255, 255, 255, 0.342);
   padding: 1rem;
 }
+@media (min-width: 351px) and (max-width: 636px) {
+  body main .texto-del-dia p {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 350px) {
+  body main .texto-del-dia p {
+    font-size: 0.75rem;
+  }
+}
 body main .gag-en-gug {
   padding: 1rem 3rem 3rem 3rem;
 }
 body main .gag-en-gug h2 {
   font-size: 4.25rem;
 }
+@media (min-width: 351px) and (max-width: 636px) {
+  body main .gag-en-gug h2 {
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 350px) {
+  body main .gag-en-gug h2 {
+    font-size: 2rem;
+  }
+}
 body main .gag-en-gug h3 {
   font-size: 2rem;
 }
+@media (min-width: 351px) and (max-width: 636px) {
+  body main .gag-en-gug h3 {
+    font-size: 1.05rem;
+  }
+}
+@media (max-width: 350px) {
+  body main .gag-en-gug h3 {
+    font-size: 1rem;
+  }
+}
 body main .gag-en-gug p {
   font-size: 1rem;
+}
+@media (min-width: 351px) and (max-width: 636px) {
+  body main .gag-en-gug p {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 350px) {
+  body main .gag-en-gug p {
+    font-size: 0.75rem;
+  }
 }
 
 .form-fila {
@@ -137,6 +277,15 @@ body main .gag-en-gug p {
   transition: 1s;
   border: none;
 }
+@media (max-width: 350px) {
+  .form-fila button {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+}
 .form-fila button:hover {
   transform: scale(1.05);
 }
@@ -147,6 +296,12 @@ label {
   background-color: black;
   color: white;
   margin: 1rem 0rem 1rem 0rem;
+}
+@media (max-width: 350px) {
+  label {
+    padding: 0.3rem;
+    font-size: 1rem;
+  }
 }
 
 textarea {

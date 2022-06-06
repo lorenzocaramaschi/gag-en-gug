@@ -15,7 +15,15 @@
         transition: 1s;
         border: none;
 
-        &:hover{
+        @media (max-width: 350px) {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        &:hover {
             transform: scale(1.05);
         }
 
@@ -28,6 +36,11 @@ label {
     background-color: black;
     color: white;
     margin: 1rem 0rem 1rem 0rem;
+
+    @media (max-width: 350px) {
+        padding: 0.3rem;
+        font-size: 1rem;
+    }
 }
 
 textarea {

@@ -1,0 +1,5 @@
+-agregar video Que es G&G?
+-agregar thumbnails a textos.html para cada texto
+-sacar lorem ipsum de textos.html
+
+

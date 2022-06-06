@@ -1,7 +1,7 @@
 @import"../operadores/mapas";
 
 body {
-    
+
     main {
         background-image: url("../imagenes/papel-bg.jpg");
         background-position: center center;
@@ -63,6 +63,12 @@ body {
                 p {
                     margin: 0;
                     padding: 0.5rem;
+
+                    @media (min-width:395px) and (max-width: 682px) {}
+
+                    @media (max-width: 394px) {
+                        font-size: 0.7rem;
+                    }
                 }
 
             }
