@@ -1,5 +1,2 @@
 -agregar video Que es G&G?
--sacar lorem ipsum de textos.html
--editar header para mobile
-
 

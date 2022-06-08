@@ -17,6 +17,12 @@ a {
   color: black;
 }
 
+@media (max-width: 350px) {
+  .navbar-toggler {
+    font-size: 1rem;
+  }
+}
+
 body main {
   background-image: url("../imagenes/papel-bg.jpg");
   background-position: center center;
@@ -29,6 +35,12 @@ body header {
   top: 0;
   z-index: 10;
 }
+@media (max-width: 350px) {
+  body header nav img {
+    width: 100px;
+    height: 100px;
+  }
+}
 body header nav .menu a {
   margin: 1rem;
   padding: 0.25rem;
@@ -36,6 +48,12 @@ body header nav .menu a {
   font-size: 1.5rem;
   transition: 0.5s;
   color: white !important;
+}
+@media (max-width: 350px) {
+  body header nav .menu a {
+    font-size: 1rem;
+    margin: 0.7rem 1rem;
+  }
 }
 body header nav .menu a:hover {
   transform: scale(1.15);
@@ -165,8 +183,19 @@ body main .texto-del-dia .bloque .contenedor .texto-bloque h4 {
     font-size: 0.7rem;
   }
 }
+body main .texto-del-dia .bloque .contenedor .texto-bloque .p-bloque {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
 @media (max-width: 350px) {
   body main .texto-del-dia .bloque .contenedor .texto-bloque .p-bloque {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 350px) {
+  body main .texto-del-dia .bloque .contenedor .texto-bloque .p-bloque-autor {
     font-size: 0.5rem;
   }
 }
