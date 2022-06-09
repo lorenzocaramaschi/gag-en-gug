@@ -59,6 +59,12 @@ body header nav .menu a:hover {
   transform: scale(1.15);
   color: white;
 }
+@media (max-width: 350px) {
+  body header nav .menu a:hover {
+    transform: scale(1);
+    color: white;
+  }
+}
 body main {
   color: black;
 }

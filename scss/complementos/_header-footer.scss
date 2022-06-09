@@ -17,14 +17,14 @@ body {
         z-index: 10;
 
         nav {
-           
-                img {
-                    @media (max-width: 350px) {
-                        width: 100px;
-                        height: 100px;
-                    }
+
+            img {
+                @media (max-width: 350px) {
+                    width: 100px;
+                    height: 100px;
                 }
-            
+            }
+
 
             .menu {
 
@@ -37,14 +37,19 @@ body {
                     color: white !important;
 
                     @media (max-width: 350px) {
-                       font-size: 1rem;
-                       margin: 0.7rem 1rem;
+                        font-size: 1rem;
+                        margin: 0.7rem 1rem;
                     }
                 }
 
                 a:hover {
                     transform: scale(1.15);
                     color: white;
+
+                    @media (max-width: 350px) {
+                        transform: scale(1);
+                        color: white;
+                    }
                 }
             }
 
